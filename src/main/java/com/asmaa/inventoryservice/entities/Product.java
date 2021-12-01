@@ -13,8 +13,9 @@ import javax.persistence.Id;
 @Entity
 @AllArgsConstructor @NoArgsConstructor @Data @ToString
 public class Product {
-    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @Id
+    private String id;
     private String name;
     private Double price;
+    private int quantity;
 }
